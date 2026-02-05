@@ -49,9 +49,10 @@ header{
 
 }
 
-.header__right li{
+.header__right li a{
     color: #777E90;
      cursor: pointer;
+     text-decoration: none;
 }
 
 .hero__content{
@@ -90,6 +91,8 @@ header{
     cursor: pointer;
 
 }
+
+
 main{
     padding-top: 150px;
 }
