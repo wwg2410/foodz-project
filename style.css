@@ -58,6 +58,10 @@ header {
     text-decoration: none;
 }
 
+.hero {
+    overflow: hidden;
+}
+
 .hero__content {
     display: flex;
 }
@@ -135,13 +139,49 @@ main {
 
 }
 
-.offers {
-    padding-top: 120px;
-    padding-bottom: 80px;
+.hero__right {
+    position: relative;
+}
+
+/* .hero__bibimbap{
+    position: absolute;
+  
+    
+} */
+
+.hero__circle {
+    position: absolute;
+    z-index: -1;
+    bottom: -7%;
+    left: -20%;
+}
+
+.hero__chopstick,
+.hero__sugar {
+    position: absolute;
+}
+
+.hero__chopstick {
+    bottom: -7%;
+    left: 0;
+}
+
+.hero__sugar {
+    right: -7%;
+    top: 5%;
+}
+
+
+
+
+
+
+#offers {
     background: #FCFCFD;
 }
 
 .today__offers {
+    margin: 120px auto;
     text-align: center;
     font-size: 48px;
     font-family: "Alice", sans-serif;
@@ -220,7 +260,7 @@ main {
 }
 
 #offers .swiper-slide {
-
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,7 +436,7 @@ main {
 
 .footer__info {
     display: flex;
-    margin-top: 61px;
+    margin-top: 60px;
     gap: 104px;
 }
 
@@ -405,6 +445,7 @@ main {
     height: 134px;
     margin-bottom: 160px;
     text-align: center;
+
 }
 
 .footer__info {
@@ -445,32 +486,37 @@ main {
     font-weight: 500;
 
 }
-.header__burger{
+
+.header__burger {
     display: none;
 }
 
-@media(max-width: 500px){
+@media(max-width: 500px) {
 
 
-    .header__nav img{
+    .header__nav img {
         width: 59px;
         height: 18px;
     }
-    .container{
+
+    .container {
         padding: 0 24px;
     }
-    .header__right{
+
+    .header__right {
         display: none;
     }
-    .header__burger{
+
+    .header__burger {
         width: 16px;
         height: 2px;
         border-radius: 10px;
         background: #777E90;
-        display: block  ;
+        display: block;
         position: relative;
     }
-    .header__burger::after{
+
+    .header__burger::after {
         width: 16px;
         height: 2px;
         border-radius: 10px;
@@ -482,27 +528,31 @@ main {
     }
 }
 
-@media(max-width: 650px){
-    
-    .header__nav img{
+@media(max-width: 650px) {
+
+    .header__nav img {
         width: 59px;
         height: 18px;
     }
-      .container{
+
+    .container {
         padding: 0 24px;
     }
-    .header__right{
+
+    .header__right {
         display: none;
     }
-      .header__burger{
+
+    .header__burger {
         width: 25px;
         height: 3px;
         border-radius: 8px;
         background: #777E90;
-        display: block  ;
+        display: block;
         position: relative;
     }
-    .header__burger::after{
+
+    .header__burger::after {
         width: 25px;
         height: 3px;
         border-radius: 8px;
@@ -515,8 +565,93 @@ main {
 }
 
 @media (max-width: 700px) {
-  .header__nav img {
-    width: 90px;
-    height: 25px;
-  }
+    .header__nav img {
+        width: 90px;
+        height: 25px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .hero__left__top h1 {
+        font-size: 56px;
+    }
+
+    .hero__text {
+        font-size: 20px;
+        width: 80%;
+    }
+
+
+    .hero__left__bottom {
+        width: 414px;
+        height: 100px;
+        margin-top: 82px;
+        padding: 16px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .hero__left__bottom h3 {
+        font-size: 24px;
+    }
+
+    .hero__left__bottom p {
+        font-size: 18px;
+    }
+
+    .hero__bibimbap {
+        width: 326px;
+        height: 326px;
+        position: relative;
+        left: -33%;
+        bottom: -14%;
+    }
+
+    .hero__circle {
+        width: 478px;
+        bottom: -18%;
+        right: -3%;
+    }
+
+    .hero__chopstick {
+        width: 392px;
+        height: 228px;
+        bottom: -18%;
+        right: 4%;
+    }
+
+    .hero__sugar {
+        top: 25%;
+        right: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .footer__foodz {
+        margin-right: 73px;
+    }
+
+    .foodz__info {
+        width: 519px;
+        height: 216px;
+        margin-bottom: 142px;
+    }
+
+    .logo__footer {
+        width: 140px;
+        height: 40px;
+    }
+
+    .footer__info {
+        width: 336px;
+        height: 82px;
+        font-size: 14px;
+    }
+
+    .left__ul {
+        width: 166px;
+        height: 216px;
+    }
 }
