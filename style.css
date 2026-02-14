@@ -25,6 +25,10 @@
 
 }
 
+.closed{
+    display: none;
+}
+
 .header__right ul {
     display: flex;
     gap: 32px;
@@ -57,6 +61,10 @@ header {
     cursor: pointer;
     text-decoration: none;
 }
+
+
+
+
 
 .hero {
     overflow: hidden;
@@ -505,6 +513,36 @@ main {
 
     .header__right {
         display: none;
+    }
+
+
+
+    .header__right.active{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        z-index: 2;
+        justify-content: center;
+    }
+
+
+    .header__right.active ul{
+        flex-direction: column;
+    }
+
+
+    .header__right.active h4{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 30px;
+    }
+
+
+    .header__right:active h4:hover{
+        cursor: pointer;
+        color: #04B90B;
     }
 
     .header__burger {
