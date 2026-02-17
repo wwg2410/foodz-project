@@ -29,7 +29,7 @@
                         <li><a href="./pages/blog/blog.html">Blog</a></li>
                         <li>Contact</li>
                     </ul>
-                    <button>ORDER NOW</button>
+                    <button onclick="clickPopup()">ORDER NOW</button>
 
                     <h4 onclick="clickBurger()" class="closed">X</h4>
 
@@ -37,6 +37,54 @@
                 </div>
                 <div onclick="clickBurger()" class="header__burger"></div>
             </div>
+
+
+            <form class="form">
+
+
+                <h2 class="user__data">Введите свои данные</h2>
+
+                <label>
+                    <p class="text__form">Ваше Имя</p>
+                    <input class="name" type="text" placeholder="Ваше Имя">
+                </label>
+
+                <label> 
+                    <p class="text__form">Ваш Адрес</p>
+                    <input class="addres" type="text" placeholder="Ваш адрес">
+                </label>
+
+                 <label> 
+                    <p class="text__form">Ваш номер телефона</p>
+                    <input class="number" type="number" placeholder="Номер телефонв">
+                </label>
+
+                 <label> 
+                    <p class="text__form">Ваша почта </p>
+                    <input class="email" type="email" placeholder="Ваша почта">
+                </label>
+
+                <button onclick="clickPopup1()" class="go">Отправить</button>
+
+                <h3 onclick="clickPopup()">X</h3>
+
+
+            </form>
+
+
+            <form class="form__success">
+
+
+                <h3 class="order__success">Ваш заказ успешно создан</h3>
+
+                <button class="finish" onclick="clickPopup1()">Готово</button>
+
+
+
+            </form>
+
+
+             
         </div>
     </header>
 
@@ -472,6 +520,8 @@
 
     </footer>
 
+
+    <script src="./main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 

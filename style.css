@@ -25,7 +25,7 @@
 
 }
 
-.closed{
+.closed {
     display: none;
 }
 
@@ -60,6 +60,116 @@ header {
     color: #777E90;
     cursor: pointer;
     text-decoration: none;
+}
+
+
+
+
+.form {
+    width: 400px;
+    padding: 20px 30px;
+    background: #04B90B;
+    color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 150px;
+    display: none;
+
+}
+
+.form.active {
+    display: block;
+}
+
+.user__data {
+
+    font-size: 25px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.text__form {
+
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.form input {
+
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    padding-left: 15px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+
+.go {
+    width: 100%;
+    height: 40px;
+    border: 10px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+
+.form h3 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    color: aquamarine;
+}
+
+.form h3:hover {
+    color: #f4f5f6;
+}
+
+
+
+
+.form__success {
+    width: 300px;
+    padding: 20px 30px;
+    background: sandybrown;
+    color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 250px;
+
+    display: none;
+
+}
+
+
+
+.form__success.active {
+    display: block;
+}
+
+.order__success {
+    font-size: 30px;
+    margin-bottom: 30px;
+
+}
+
+
+.finish {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
 }
 
 
@@ -517,7 +627,7 @@ main {
 
 
 
-    .header__right.active{
+    .header__right.active {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -527,12 +637,12 @@ main {
     }
 
 
-    .header__right.active ul{
+    .header__right.active ul {
         flex-direction: column;
     }
 
 
-    .header__right.active h4{
+    .header__right.active h4 {
         display: block;
         position: absolute;
         top: 0;
@@ -540,7 +650,7 @@ main {
     }
 
 
-    .header__right:active h4:hover{
+    .header__right:active h4:hover {
         cursor: pointer;
         color: #04B90B;
     }
